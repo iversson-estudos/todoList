@@ -1,11 +1,3 @@
-WEBPACK
-    DEV MODE
-    INDEX.JS -> ENTRY POINT
+EXERCISE FROM THE ODIN PROJECT COURSE:
 
-SUPPORT ADDED:
-    HTML
-    CSS
-    IMG in JS
-    LIVE SERVER WEBPACK  -> http://localhost:8080/
-
-CLONE AND RUN "npm install" TO INSTALL ALL DEPENDENCIES
+EXERCISE: https://www.theodinproject.com/lessons/node-path-javascript-todo-list
