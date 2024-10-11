@@ -1,0 +1,11 @@
+WEBPACK
+    DEV MODE
+    INDEX.JS -> ENTRY POINT
+
+SUPPORT ADDED:
+    HTML
+    CSS
+    IMG in JS
+    LIVE SERVER WEBPACK  -> http://localhost:8080/
+
+CLONE AND RUN "npm install" TO INSTALL ALL DEPENDENCIES
