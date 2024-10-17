@@ -1,9 +1,9 @@
 import "./styles.css";
-import {List} from "./list.js";
+import { List } from "./list.js";
+import { Todo } from "./todo.js";
 
 
 
-var lista1 = new List('japao', '01/12/1998');
 
 
-console.log(lista1.getList());
+

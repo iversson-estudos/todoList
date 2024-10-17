@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import {Todo} from "./todo.js";
+import { Todo } from "./todo.js";
 
 class List {
     constructor(name, dueDate) {
@@ -12,6 +12,10 @@ class List {
         this._todos = [];
     }
 
+
+    get Lista(){
+        return this;
+    }
     //Add new todo
     addTodo(title,description,priority){
         const newTodo = new Todo(title,description,priority);
@@ -56,7 +60,7 @@ class List {
     }
 
     // Setter for status
-    set status(newStatus) {
+    set status(newStatus){
         this._status = newStatus;
     }
 }
