@@ -1,6 +1,6 @@
-import "./styles.css";
-import { List } from "./list.js";
-import { Todo } from "./todo.js";
+import "./css/styles.css";
+import { List } from "./classes/list.js";
+import { Todo } from "./classes/todo.js";
 
 
 
