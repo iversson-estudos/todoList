@@ -1,11 +1,11 @@
-import { format } from "date-fns";
+import { format, parseISO} from "date-fns";
 import { Todo } from "./todo.js";
 
 class List {
     constructor(name, dueDate) {
         this._name = name;
-        this._dueDate = format(new Date(dueDate), 'dd/MM/yyyy');
-        this._dateOfCreation = format(new Date(), 'dd/MM/yyyy');
+        this._dueDate = dueDate; 
+        this._dateOfCreation = format(new Date(), 'dd-MM-yyyy');
         this._status = 'created';
         
         //TO DO'S
@@ -44,7 +44,7 @@ class List {
 
     // Setter for dueDate
     set dueDate(newDate) {
-        this._dueDate = format(new Date(newDate), 'dd/MM/yyyy');
+        this._dueDate = newDate;
     }
 
     // Getter for dateOfCreation
@@ -62,6 +62,26 @@ class List {
     // Setter for status
     set status(newStatus){
         this._status = newStatus;
+    }
+     
+    // Convert List instance to a plain object for JSON serialization
+    toJSON() {
+        return {
+            _name: this._name,
+            _dueDate: this._dueDate,
+            _dateOfCreation: this._dateOfCreation,
+            _status: this._status,
+            _todos: this._todos
+        };
+    }
+
+    // Static method to re-instantiate a List from a plain object
+    static fromJSON(data) {
+        const list = new List(data._name, data._dueDate); 
+        list._dateOfCreation = data._dateOfCreation;
+        list._status = data._status;
+        list._todos = data._todos;
+        return list;
     }
 }
 

@@ -2,6 +2,7 @@ import "./css/styles.css";
 import { List } from "./classes/list.js";
 import { Todo } from "./classes/todo.js";
 import { mainView } from "./views/mainView.js";
+import StorageHandler from "./classes/storageHandler.js"
 
 
 
@@ -19,8 +20,8 @@ const listsArray = [
     new List('IBM', '2025-01-17')
 ];
 
-//VARIABLE THAT HOLDS ALL THE LISTS ON LOCALSTORAGE
-localStorage.setItem('listsArray',JSON.stringify(listsArray));
+StorageHandler.saveLists(listsArray);
+
 
 mainView();
 

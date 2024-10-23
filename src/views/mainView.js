@@ -1,5 +1,6 @@
 
 import { List } from "../classes/list.js"
+import  StorageHandler  from "../classes/storageHandler.js"
 
 function mainView(){
 //GETS MAIN CONTAINER AND ORGANIZES IT TO ACCOMODATE THE VIEW
@@ -15,7 +16,7 @@ main.innerHTML=`
 //INSERT LISTS ONTO LIST CONTAINER
 const listContainer = document.getElementById('listContainer');
 
-const arrayOfLists = JSON.parse(localStorage.getItem('listsArray'));
+const arrayOfLists = StorageHandler.loadLists();
 console.log(arrayOfLists);
 
 arrayOfLists.forEach(element => {
