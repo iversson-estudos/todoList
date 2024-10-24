@@ -45,8 +45,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
+/*END OF CSS RESET*/
 
 #main{
     width: 100vw;
@@ -60,6 +59,8 @@ table {
 
 
         #newListBtn{
+            border: 2px solid black;
+            border-radius: 8px;
             height: 30px;
             margin: 4px;
         }
@@ -73,11 +74,17 @@ table {
                 display: grid;
                 grid-template-rows: repeat(1fr 1fr 1fr);
                 gap: 1px;
+                user-select: none;
+                cursor: pointer;
                 
                 p{
                     
                 }
 
+            }
+            div:hover{
+                background-color: blue;
+                
             }
             
         }
