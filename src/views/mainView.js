@@ -6,7 +6,7 @@ function mainView(){
 //GETS MAIN CONTAINER AND ORGANIZES IT TO ACCOMODATE THE VIEW
 const main = document.getElementById('main');
 main.innerHTML=`
-            <div id="left-container">
+            <div id="leftContainer">
                 <button id="newListBtn">NEW LIST</button>
                 <div id="listContainer"></div>
             </div>
@@ -27,7 +27,7 @@ arrayOfLists.forEach(element => {
 
     pName.textContent = 'Name: '+element.name;
     pDueDate.textContent= 'Due Date: '+element.dueDate;
-    pCreationDate.textContent= 'Due Date: '+element.dateOfCreation;
+    pCreationDate.textContent= 'Date of Creation: '+element.dateOfCreation;
 
     divList.appendChild(pName);
     divList.appendChild(pDueDate);

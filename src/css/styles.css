@@ -45,3 +45,42 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+
+#main{
+    width: 100vw;
+    display: flex;
+    
+    #leftContainer{
+        display: flex;
+        flex-direction: column;
+        padding-right: 8px;
+        padding-left: 8px;
+
+
+        #newListBtn{
+            height: 30px;
+            margin: 4px;
+        }
+
+        #listContainer{
+            display: grid;
+            grid-template-rows: repeat(1fr);
+            gap: 10px;
+
+            div{
+                display: grid;
+                grid-template-rows: repeat(1fr 1fr 1fr);
+                gap: 1px;
+                
+                p{
+                    
+                }
+
+            }
+            
+        }
+    }
+    
+}
