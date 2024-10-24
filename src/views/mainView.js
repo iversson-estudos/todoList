@@ -21,6 +21,11 @@ console.log(arrayOfLists);
 
 arrayOfLists.forEach(element => {
     const divList = document.createElement('div');
+    
+    divList.className='list';
+    divList.textContent=element.name;
+    divList.dataset.id = element.id;
+
     const pName = document.createElement('p');
     const pDueDate = document.createElement('p');
     const pCreationDate = document.createElement('p');
