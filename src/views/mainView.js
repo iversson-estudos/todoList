@@ -10,7 +10,7 @@ main.innerHTML=`
                 <button id="newListBtn">NEW LIST</button>
                 <div id="listContainer"></div>
             </div>
-            <div id="main-container">
+            <div id="todoContainer">
             </div>`;
 
 //INSERT LISTS ONTO LIST CONTAINER

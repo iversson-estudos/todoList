@@ -1,9 +1,10 @@
 import { format, parseISO} from "date-fns";
 import { Todo } from "./todo.js";
 
+let idCounter = 0;
 class List {
     constructor(name, dueDate) {
-        this._id = Date.now();
+        this._id = ++idCounter;
         this._name = name;
         this._dueDate = dueDate; 
         this._dateOfCreation = format(new Date(), 'dd-MM-yyyy');
