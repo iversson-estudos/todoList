@@ -91,7 +91,7 @@ class List {
         list._id = data._id;
         list._dateOfCreation = data._dateOfCreation;
         list._status = data._status;
-        list._todos = data._todos;
+        list._todos = data._todos.map(todoData => Object.assign(new Todo(), todoData)); // Instantiate each Todo
         return list;
     }
 }

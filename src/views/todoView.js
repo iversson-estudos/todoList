@@ -2,33 +2,29 @@ import { List } from "../classes/list.js";
 import { Todo } from "../classes/todo.js";
 import StorageHandler from "../classes/storageHandler.js";
 
-function todoView(listId){
+function todoView(list){
     //CONTAINER WHERE RENDERING TODOS
     const todoContainer = document.getElementById('todoContainer');
     todoContainer.innerHTML='';
 
-    //LOADS LISTS FROM LOCALSTORAGE
-    const arrayOfLists = StorageHandler.loadLists();
-    //SELECT CORRECT LIST
-    const selectedList = arrayOfLists.find(list => list._id == listId);
-    console.log('Loaded lists:', arrayOfLists);
+   
+    
     //RENDERS TODOS IF FOUND LIST
-    if(selectedList){
+    if(list){
         //loads todos
-        console.log('should be lading tods');
-        const todos = selectedList.todos;
-        
-        todos.forEach(Todo => {
+        const todos = list.todos;
+        todos.forEach(element => {
+            
             const todoDiv = document.createElement('div');
             const pTitle = document.createElement('p');
             const pDescription= document.createElement('p');
             const pPriority = document.createElement('p');
             const pCompleted = document.createElement('p');
 
-            pTitle.textContent = Todo.title;
-            pDescription.textContent = Todo.description;
-            pPriority.textContent = Todo.priority
-            pCompleted.textContent = Todo.isCompleted;
+            pTitle.textContent = element.title;
+            pDescription.textContent = element.description;
+            pPriority.textContent = element.priority
+            pCompleted.textContent = element.isCompleted;
             
             todoDiv.className='todo';
             todoDiv.appendChild(pTitle);

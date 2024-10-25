@@ -20,6 +20,48 @@ const listsArray = [
     new List('IBM', '2025-01-17')
 ];
 
+listsArray[0].addTodo('Design iPhone', 'Create concept sketches for iPhone', '8');
+listsArray[0].addTodo('iOS Development', 'Develop iOS 18 features', '9');
+listsArray[0].addTodo('Design iPhone', 'Create concept sketches for iPhone', '8');
+listsArray[0].addTodo('iOS Development', 'Develop iOS 18 features', '9');
+listsArray[0].addTodo('Design iPhone', 'Create concept sketches for iPhone', '8');
+listsArray[0].addTodo('iOS Development', 'Develop iOS 18 features', '9');
+listsArray[0].addTodo('Design iPhone', 'Create concept sketches for iPhone', '8');
+listsArray[0].addTodo('iOS Development', 'Develop iOS 18 features', '9');
+listsArray[1].addTodo('Windows 12 Update', 'Release beta version', '7');
+listsArray[1].addTodo('Cloud Services', 'Expand Azure data centers', '8');
+listsArray[1].addTodo('Windows 12 Update', 'Release beta version', '7');
+listsArray[1].addTodo('Cloud Services', 'Expand Azure data centers', '8');
+listsArray[1].addTodo('Windows 12 Update', 'Release beta version', '7');
+listsArray[1].addTodo('Cloud Services', 'Expand Azure data centers', '8');
+listsArray[1].addTodo('Windows 12 Update', 'Release beta version', '7');
+listsArray[1].addTodo('Cloud Services', 'Expand Azure data centers', '8');
+listsArray[1].addTodo('Windows 12 Update', 'Release beta version', '7');
+listsArray[1].addTodo('Cloud Services', 'Expand Azure data centers', '8');
+listsArray[1].addTodo('Windows 12 Update', 'Release beta version', '7');
+listsArray[1].addTodo('Cloud Services', 'Expand Azure data centers', '8');
+listsArray[2].addTodo('Supply Chain', 'Optimize Amazon Prime logistics', '7');
+listsArray[2].addTodo('Website Redesign', 'Refresh homepage UI', '6');
+listsArray[3].addTodo('Programming', 'Overloading my apps', '10');
+listsArray[3].addTodo('Content Acquisition', 'Negotiate new film licenses', '9');
+listsArray[4].addTodo('Battery Technology', 'Research new battery tech', '8');
+listsArray[4].addTodo('Autopilot Development', 'Enhance self-driving AI', '9');
+listsArray[5].addTodo('Social Media Update', 'Add privacy features', '7');
+listsArray[5].addTodo('Ad Campaign', 'Launch new targeted ads', '5');
+listsArray[6].addTodo('Smartphone Release', 'Prepare Galaxy launch', '8');
+listsArray[6].addTodo('UI/UX Design', 'Enhance user experience', '6');
+listsArray[7].addTodo('Gaming Console', 'Develop PlayStation 6 specs', '9');
+listsArray[7].addTodo('Sensor Technology', 'Enhance camera sensors', '8');
+listsArray[8].addTodo('Processor Development', 'Launch new i9 processor', '9');
+listsArray[8].addTodo('AI Research', 'Expand AI initiatives', '10');
+listsArray[9].addTodo('Quantum Computing', 'Research quantum circuits', '10');
+listsArray[9].addTodo('Cloud Solutions', 'Develop next-gen cloud servers', '9');
+
+
+
+
+
+
 StorageHandler.saveLists(listsArray);
 
 
