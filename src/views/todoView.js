@@ -5,7 +5,13 @@ import StorageHandler from "../classes/storageHandler.js";
 function todoView(list){
     //CONTAINER WHERE RENDERING TODOS
     const todoContainer = document.getElementById('todoContainer');
-    todoContainer.innerHTML='';
+    todoContainer.innerHTML=`
+    <div class='todoHeader'>
+        <p>Title</p>
+        <p>Description</p>
+        <p>Priority</p>
+        <p>Done</p>
+    </div>`;
 
    
     

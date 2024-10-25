@@ -49,13 +49,16 @@ table {
 
 #main{
     width: 100vw;
-    display: flex;
+    display: grid;
+    grid-template-columns: 20fr 80fr;
     
     #leftContainer{
+        grid-column: 1/2;
         display: flex;
         flex-direction: column;
         padding-right: 8px;
         padding-left: 8px;
+        border: 2px solid red;
 
 
         #newListBtn{
@@ -87,6 +90,49 @@ table {
                 
             }
             
+        }
+    }
+    #todoContainer{
+        
+        user-select: none;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+        
+
+        .todoHeader{
+            
+            cursor:default;
+            display: grid;
+            grid-template-columns: 3fr 8fr 1fr 1fr;
+            height: 32px;
+            background-color: grey;
+            
+            p{
+                display: flex;
+                justify-content: flex-start;
+                border: 1px solid gold;
+            }
+        }
+        
+        .todo{
+            
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: 3fr 8fr 1fr 1fr;
+            height: 32px;
+            
+            p{
+                display: flex;
+                justify-content: flex-start;
+                border: 1px solid black;
+            }
+
+            
+        }
+        .todo:hover{
+            background-color: bisque;
         }
     }
     
