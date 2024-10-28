@@ -1,5 +1,6 @@
 import StorageHandler from "../classes/storageHandler";
 import { todoView } from "../views/todoView"; // Assuming todoView is a function to render todos
+import { newListView } from "../views/newListView";
 
 class Router {
     constructor() {
@@ -9,7 +10,6 @@ class Router {
 
     // Change the URL when navigating to a specific list
     navigateToList(listId) {
-        
         window.location.hash = `#list/${listId}`; // Updates the URL hash with the list's ID
     }
 
@@ -31,6 +31,9 @@ class Router {
         } else {
             console.error('List not found');
         }
+    }
+    openNewListDialog(){
+        newListView();
     }
 }
 

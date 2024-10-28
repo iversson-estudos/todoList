@@ -22,4 +22,14 @@ function addEventListenersToLists(router) {
 }
 
 
-export { addEventListenersToLists };
+function addEventToBtnNewList(router){
+    const button = document.getElementById('newListBtn');
+    const newHandler = () => { 
+        console.log('clicked on button NEW LIST');
+        router.openNewListDialog();
+    }
+    button.removeEventListener('click',newHandler);
+    button.addEventListener('click',newHandler);
+}
+
+export { addEventListenersToLists, addEventToBtnNewList };

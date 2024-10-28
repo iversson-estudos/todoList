@@ -3,7 +3,7 @@ import { List } from "./classes/list.js";
 import { Todo } from "./classes/todo.js";
 import { mainView } from "./views/mainView.js";
 import StorageHandler from "./classes/storageHandler.js";   
-import { addEventListenersToLists } from "./events/eventHandlers.js";
+import { addEventListenersToLists, addEventToBtnNewList } from "./events/eventHandlers.js";
 import { Router } from "./router/router.js";
 
 //LISTS FOR TEST, NEED TO CREATE AN DEFAULT ONE WHEN FINISHED
@@ -63,11 +63,11 @@ listsArray[9].addTodo('Cloud Solutions', 'Develop next-gen cloud servers', '9');
 
 
 StorageHandler.saveLists(listsArray);
-
-
 mainView();
+
 const router = new Router();
 addEventListenersToLists(router);
+addEventToBtnNewList(router);
 
 
 
