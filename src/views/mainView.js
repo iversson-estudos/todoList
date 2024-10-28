@@ -13,12 +13,22 @@ main.innerHTML=`
             <div id="todoContainer">
             </div>`;
 
-//INSERT LISTS ONTO LIST CONTAINER
+//GETS CONTAINER FOR THE LISTS
 const listContainer = document.getElementById('listContainer');
 
+
+//GETS LISTS FROM LOCALSTORAGE
 const arrayOfLists = StorageHandler.loadLists();
 console.log(arrayOfLists);
 
+//ORDERS LISTS BY NAME
+arrayOfLists.sort((a, b) => {
+    if (a._name < b._name) return -1;
+    if (a._name > b._name) return 1;
+    return 0;
+});
+
+//INSERT LISTS ONTO LIST CONTAINER
 arrayOfLists.forEach(element => {
     const divList = document.createElement('div');
     

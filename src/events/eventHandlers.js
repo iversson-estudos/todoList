@@ -1,6 +1,6 @@
-import { Router } from "../router/router.js";
+import { router } from "../index.js";
 
-function addEventListenersToLists(router) {
+function addEventListenersToLists() {
     const lists = document.querySelectorAll('.list');
     lists.forEach(element => {
         const newHandler = (e) => {
@@ -22,7 +22,7 @@ function addEventListenersToLists(router) {
 }
 
 
-function addEventToBtnNewList(router){
+function addEventToBtnNewList(){
     const button = document.getElementById('newListBtn');
     const newHandler = () => { 
         console.log('clicked on button NEW LIST');
@@ -32,4 +32,23 @@ function addEventToBtnNewList(router){
     button.addEventListener('click',newHandler);
 }
 
-export { addEventListenersToLists, addEventToBtnNewList };
+function addEventListenerToNewListForm(){
+    //GETS BUTTON
+    const button = document.getElementById('newListSubmit');
+    
+    //PREVENTS SUBMIT DEFAULT
+    const form = document.getElementById('listForm').addEventListener('submit',function(event) {
+        event.preventDefault();
+    });
+    
+    //NEW HANDLER
+    const newHandler = () => { 
+        console.log('clicked on button to SUBMIT NEW LIST');
+        router.newListSubmit();
+    }
+    //REMOVES AND ADDS HANDLER, SO THERES NO DUPLICATES
+    button.removeEventListener('click',newHandler);
+    button.addEventListener('click',newHandler);
+}
+
+export { addEventListenersToLists, addEventToBtnNewList, addEventListenerToNewListForm };

@@ -1,6 +1,9 @@
 import StorageHandler from "../classes/storageHandler";
 import { todoView } from "../views/todoView"; // Assuming todoView is a function to render todos
 import { newListView } from "../views/newListView";
+import { addEventListenerToNewListForm } from "../events/eventHandlers";
+import { newListSubmit } from "../controllers/newListSubmit";
+import { mainView } from "../views/mainView";
 
 class Router {
     constructor() {
@@ -32,8 +35,13 @@ class Router {
             console.error('List not found');
         }
     }
+    
     openNewListDialog(){
         newListView();
+    }
+
+    newListSubmit(){
+        newListSubmit();
     }
 }
 

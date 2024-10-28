@@ -66,9 +66,11 @@ StorageHandler.saveLists(listsArray);
 mainView();
 
 const router = new Router();
-addEventListenersToLists(router);
-addEventToBtnNewList(router);
+addEventListenersToLists();
+addEventToBtnNewList();
 
+
+export {router};
 
 
 
