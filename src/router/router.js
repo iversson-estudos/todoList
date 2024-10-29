@@ -13,7 +13,8 @@ class Router {
 
     // Change the URL when navigating to a specific list
     navigateToList(listId) {
-        window.location.hash = `#list/${listId}`; // Updates the URL hash with the list's ID
+        window.location.hash = `#list/${listId}`;// Updates the URL hash with the list's ID
+        
     }
 
     // Handle changes in the URL hash
@@ -30,6 +31,7 @@ class Router {
         const arrayOfLists = StorageHandler.loadLists(); // Load lists from storage
         const list = arrayOfLists.find(list => list.id == listId); // Find list by id
         if (list) {
+            mainView(); //re-renders mainView so it shows new list when created
             todoView(list); // Call todoView to render the todos for the selected list
         } else {
             console.error('List not found');

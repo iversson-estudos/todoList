@@ -22,7 +22,7 @@ function newListSubmit(){
     //GETS ID FROM NEW LIST
     const idList = newList.id;
 
-    newList.addTodo('Design iPhone', 'Create concept sketches for iPhone', '8');
+    newList.addTodo('Design iPhonE', 'Create concept sketches for iPhone', '8');
     newList.addTodo('iOS Development', 'Develop iOS 18 features', '9');
     newList.addTodo('Windows 12 Update', 'Release beta version', '7');
     newList.addTodo('Cloud Services', 'Expand Azure data centers', '8');
