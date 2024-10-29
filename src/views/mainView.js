@@ -1,6 +1,8 @@
 
 import { List } from "../classes/list.js"
 import  StorageHandler  from "../classes/storageHandler.js"
+import { addEventListenersToLists, addEventToBtnNewList } from "../events/eventHandlers.js";
+
 
 function mainView(){
 //GETS MAIN CONTAINER AND ORGANIZES IT TO ACCOMODATE THE VIEW
@@ -28,8 +30,8 @@ arrayOfLists.sort((a, b) => {
     return 0;
 });
 
-//INSERT LISTS ONTO LIST CONTAINER
-arrayOfLists.forEach(element => {
+    //INSERT LISTS ONTO LIST CONTAINER
+    arrayOfLists.forEach(element => {
     const divList = document.createElement('div');
     
     divList.className='list';
@@ -49,7 +51,11 @@ arrayOfLists.forEach(element => {
     divList.appendChild(pCreationDate);
 
     listContainer.appendChild(divList);
-});
+    });
+
+    //ADDS EVENTLISTENERS TO THE LISTS AND BUTTON
+    addEventListenersToLists();
+    addEventToBtnNewList();
 
 }
 
