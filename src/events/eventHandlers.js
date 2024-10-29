@@ -26,7 +26,7 @@ function addEventToBtnNewList(){
     const button = document.getElementById('newListBtn');
     const newHandler = () => { 
         console.log('clicked on button NEW LIST');
-        router.openNewListDialog();
+        router.openNewListForm();
     }
     button.removeEventListener('click',newHandler);
     button.addEventListener('click',newHandler);

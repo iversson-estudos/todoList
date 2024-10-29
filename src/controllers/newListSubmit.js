@@ -16,6 +16,10 @@ function newListSubmit(){
     const title = formData.get('title');
     const dueDate = formData.get('dueDate');
 
+    if(!form.reportValidity()){
+        return 0;
+    }
+
     //CREATES NEW LIST
     const newList = new List(title,dueDate);
     
