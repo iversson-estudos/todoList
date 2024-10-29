@@ -18,7 +18,7 @@ function newListView(){
         <label for="dueDate">Due Date:</label>
         <input type="date" id="dueDate" name="dueDate" required>
     
-        <button type="submit" id="newListSubmit">Create Task</button>
+        <button type="submit" id="newListSubmit">Create List</button>
     </form>`;
 
     //ADDS EVENT LISTENER TO FORM SUBMIT
