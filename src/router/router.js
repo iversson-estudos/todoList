@@ -37,7 +37,10 @@ class Router {
             console.error('List not found');
         }
     }
-    
+    openMainView(){
+        mainView();
+    }
+
     openNewListDialog(){
         newListView();
     }

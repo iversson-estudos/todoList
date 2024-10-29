@@ -9,9 +9,9 @@ function newListView(){
 
     
     //FORM BODY
-
     todoContainer.innerHTML= `
     <form id="listForm">
+        <button id="closeForm">X</button>
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" maxlength="30" required>
     

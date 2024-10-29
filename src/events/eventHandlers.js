@@ -49,6 +49,11 @@ function addEventListenerToNewListForm(){
     //REMOVES AND ADDS HANDLER, SO THERES NO DUPLICATES
     button.removeEventListener('click',newHandler);
     button.addEventListener('click',newHandler);
+
+    //GETS CLOSE BUTTON
+    const closeButton = document.getElementById('closeForm');
+    //ADDS EVENTLISTENER SO IT RELOADS MAIN VIEW
+    closeButton.addEventListener('click',router.openMainView);
 }
 
 export { addEventListenersToLists, addEventToBtnNewList, addEventListenerToNewListForm };
