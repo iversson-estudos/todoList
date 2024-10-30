@@ -56,4 +56,14 @@ function addEventListenerToNewListForm(){
     closeButton.addEventListener('click',router.openMainView);
 }
 
-export { addEventListenersToLists, addEventToBtnNewList, addEventListenerToNewListForm };
+function addEventToBtnNewTodo(){
+    const button = document.getElementById('newTodoButton');
+    const newHandler = () => { 
+        console.log('clicked on button NEW TODO');
+        router.openNewTodoForm();
+    }
+    button.removeEventListener('click',newHandler);
+    button.addEventListener('click',newHandler);
+}
+
+export { addEventListenersToLists, addEventToBtnNewList,addEventToBtnNewTodo, addEventListenerToNewListForm };

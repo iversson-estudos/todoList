@@ -1,6 +1,8 @@
 import { List } from "../classes/list.js";
 import { Todo } from "../classes/todo.js";
 import StorageHandler from "../classes/storageHandler.js";
+import { addEventToBtnNewTodo } from "../events/eventHandlers.js"
+
 
 function todoView(list){
     //CONTAINER WHERE RENDERING TODOS
@@ -41,10 +43,17 @@ function todoView(list){
             todoContainer.appendChild(todoDiv);
     
         });
+        
     }
-
-
+    //ADDS FOOTER
+    todoContainer.innerHTML+=`
+    <div id=todoFooter>
+        <button id="newTodoButton">+</button>
+    </div>`;
+    //ADDS EVENT LISTENER TO BUTTON
+    addEventToBtnNewTodo();
 }
+    
 
 
 export { todoView };

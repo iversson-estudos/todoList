@@ -4,6 +4,7 @@ import { newListView } from "../views/newListView";
 import { addEventListenerToNewListForm } from "../events/eventHandlers";
 import { newListSubmit } from "../controllers/newListSubmit";
 import { mainView } from "../views/mainView";
+import { newTodoView } from "../views/newTodoView";
 
 class Router {
     constructor() {
@@ -47,6 +48,9 @@ class Router {
 
     newListSubmit(){
         newListSubmit();
+    }
+    openNewTodoForm(){
+        newTodoView();
     }
 }
 
