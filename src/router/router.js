@@ -50,7 +50,7 @@ class Router {
         newListSubmit();
     }
     openNewTodoForm(){
-        newTodoView();
+       newTodoView();
     }
 }
 
