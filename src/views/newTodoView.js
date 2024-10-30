@@ -6,12 +6,15 @@ function newTodoView(){
     const todoContainer = document.getElementById('todoContainer');
     //HTML FOR NEW TODOFORM
     todoContainer.innerHTML= `
-    <form id="listForm">
+    <form id="todoForm">
         <button id="closeForm">X</button>
+        
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" maxlength="30" required>
+        
         <label for="description">Description:</label>
         <input type="text" id="description" name="description" maxlength="80">
+        
         <label for="title">Priority:</label>
         <div id="priority">
             <label>
@@ -24,9 +27,13 @@ function newTodoView(){
               <input type="radio" name="priority" value="low" /> Low
             </label>
         </div>
+        
         <button type="submit" id="newTodoSubmit">Create List</button>
-    </form>`
-    `;
+    </form>`;
+
+    //ADDS LISTENERS TO SUBMIT BUTTON
+
+    addEventListenerToNewTodoForm(router);
 
 }
 

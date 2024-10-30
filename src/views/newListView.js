@@ -22,7 +22,7 @@ function newListView(){
     </form>`;
 
     //ADDS EVENT LISTENER TO FORM SUBMIT
-    addEventListenerToNewListForm(router);
+    addEventListenerToNewListForm();
 }
 
 
