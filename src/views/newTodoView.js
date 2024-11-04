@@ -1,4 +1,6 @@
-import { List } from "../classes/list.js"
+import { List } from "../classes/list.js";
+import { addEventListenerToNewTodoForm } from "../events/eventHandlers.js";
+import {router} from "../index.js"
 
 function newTodoView(){
 

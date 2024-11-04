@@ -89,4 +89,5 @@ function addEventListenerToNewTodoForm(){
     //ADDS EVENTLISTENER SO IT RELOADS MAIN VIEW
     closeButton.addEventListener('click',router.openMainView);
 }
-export { addEventListenersToLists, addEventToBtnNewList,addEventToBtnNewTodo, addEventListenerToNewListForm };
+
+export { addEventListenersToLists, addEventToBtnNewList,addEventToBtnNewTodo, addEventListenerToNewListForm, addEventListenerToNewTodoForm}
