@@ -1,6 +1,7 @@
 import "./css/styles.css";
 import { mainView } from "./views/mainView.js";
 import { Router } from "./router/router.js";
+import StorageHandler from "./classes/storageHandler.js";
 
 //LISTS FOR TEST, NEED TO CREATE AN DEFAULT ONE WHEN FINISHED
 

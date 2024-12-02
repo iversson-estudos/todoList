@@ -38,17 +38,11 @@ arrayOfLists.sort((a, b) => {
     divList.textContent=element.name;
     divList.dataset.id = element.id;
 
-    const pName = document.createElement('p');
     const pDueDate = document.createElement('p');
-    const pCreationDate = document.createElement('p');
 
-    pName.textContent = 'Name: '+element.name;
     pDueDate.textContent= 'Due Date: '+element.dueDate;
-    pCreationDate.textContent= 'Date of Creation: '+element.dateOfCreation;
-
-    divList.appendChild(pName);
+   
     divList.appendChild(pDueDate);
-    divList.appendChild(pCreationDate);
 
     listContainer.appendChild(divList);
     });
