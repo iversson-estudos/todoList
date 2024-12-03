@@ -13,7 +13,7 @@ function newListView(){
     <form id="listForm">
         <button id="closeForm">X</button>
         <label for="title">Title:</label>
-        <input type="text" id="title" name="title" maxlength="30" required>
+        <input type="text" id="title" name="title" maxlength="15" required>
     
         <label for="dueDate">Due Date:</label>
         <input type="date" id="dueDate" name="dueDate" required>
