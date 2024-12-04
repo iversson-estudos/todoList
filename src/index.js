@@ -1,5 +1,6 @@
 import "./css/styles.css";
 import { mainView } from "./views/mainView.js";
+import { newListView } from "./views/newListView.js";
 import { Router } from "./router/router.js";
 import StorageHandler from "./classes/storageHandler.js";
 
@@ -7,6 +8,7 @@ import StorageHandler from "./classes/storageHandler.js";
 
 mainView();
 const router = new Router();
+newListView();
 
 
 export {router};

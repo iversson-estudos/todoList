@@ -150,7 +150,8 @@ table {
             height: 50vh;
             background-color: beige;
             padding: 10px;
-            border: 4px solid black;
+            border-radius: 4rem;
+            border: 16px groove palevioletred;
 
             *{
                 margin: 8px;
@@ -162,19 +163,33 @@ table {
                 margin-bottom: 8px;
             }
 
+            input:focus{
+                background-color: rgb(216, 153, 174);
+            }
+
             input{
                 font-size: 32px;
+                border: 4px solid palevioletred;
+                border-radius: 1rem;
                 line-height: 48px;
+            }
+
+            button:hover {
+                background-color: palevioletred;
             }
 
             #closeForm{
                 align-self: flex-end;
+                border-radius: 0.8rem;
+                border: 8px groove palevioletred;
                 margin: 16px;
                 font-size: 32px;
             }
 
             #newListSubmit{
                 align-self: flex-end;
+                border-radius: 0.8rem;
+                border: 8px groove palevioletred;
                 margin-top: 32px;
                 font-size: 32px;
 
