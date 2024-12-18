@@ -44,15 +44,19 @@ class Router {
     }
 
     openNewListForm(){
+        window.location.hash = `#newlist/`;
         newListView();
     }
 
     newListSubmit(){
         newListSubmit();
     }
+    
     openNewTodoForm(){
+       window.location.hash = `#newtodo/`; 
        newTodoView();
     }
+    
     newTodoSubmit(){
         newTodoSubmit();
     }

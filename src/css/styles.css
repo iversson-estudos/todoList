@@ -96,7 +96,7 @@ table {
                 cursor: pointer;
                 padding: 8px;
                 border: 4px solid var(--primary-color);
-                
+                text-align: center;
 
                 p{
                     font-size: 12px;
@@ -185,6 +185,7 @@ table {
                 border: 4px solid var(--primary-color);
                 line-height: 48px;
                 outline: none;
+                text-align: center;
             }
 
             button:hover {
