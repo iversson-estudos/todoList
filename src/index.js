@@ -7,7 +7,9 @@ import StorageHandler from "./classes/storageHandler.js";
 //LISTS FOR TEST, NEED TO CREATE AN DEFAULT ONE WHEN FINISHED
 
 mainView();
+
 const router = new Router();
+router.loadList(1);
 
 
 

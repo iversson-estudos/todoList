@@ -116,7 +116,6 @@ table {
         grid-column: 2/3;
         display: flex;
         flex-direction: column;
-        border: 2px solid blue;
         
 
         .todoHeader{
@@ -126,12 +125,16 @@ table {
             grid-template-columns: 5fr 20fr 3fr 2fr;
             height: 32px;
             background-color: var(--secondary-color);
+
             
             p{
                 display: flex;
                 justify-content: flex-start;
-                border: 1px solid gold;
+                font-weight: 600;
+                border: 2px solid var(--primary-color);
             }
+
+            
             
         }
         
@@ -145,13 +148,23 @@ table {
             p{
                 display: flex;
                 justify-content: flex-start;
-                border: 1px solid black;
+                border: 2px solid var(--primary-color);
             }
 
             
         }
         .todo:hover{
-            background-color: var(--secondary-color);
+            background-color: var(--secondary-lighter);
+        }
+
+        #newTodoButton{
+            margin: 8px;
+            border: 4px solid black;
+            background-color: var(--primary-lighter);
+            font-size: 16px;
+        }
+        #newTodoButton:hover{
+            background-color: var(--primary-color);
         }
 
         /*NEW LIST FORM*/
