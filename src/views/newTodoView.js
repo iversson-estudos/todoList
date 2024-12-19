@@ -30,7 +30,7 @@ function newTodoView(){
             </label>
         </div>
         
-        <button type="submit" id="newTodoSubmit">Create List</button>
+        <button type="submit" id="newTodoSubmit">Create To Do</button>
     </form>`;
 
     //ADDS LISTENERS TO SUBMIT BUTTON

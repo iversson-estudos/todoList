@@ -53,7 +53,6 @@ class Router {
     }
     
     openNewTodoForm(){
-       window.location.hash = `#newtodo/`; 
        newTodoView();
     }
     

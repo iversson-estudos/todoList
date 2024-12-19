@@ -8,7 +8,7 @@ import StorageHandler from "./classes/storageHandler.js";
 
 mainView();
 const router = new Router();
-newListView();
+
 
 
 export {router};
